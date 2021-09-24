@@ -1,0 +1,2482 @@
+10:40:09 **** Clean-only build of configuration Debug for project Ensc351Part1-1217 ****
+make clean 
+rm -rf  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o  ./src/Ensc351Part1.d ./src/PeerY.d ./src/SenderY.d ./src/myIO.d  Ensc351Part1-1217
+ 
+14:46:00 **** Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerY.d" -MT"src/PeerY.o" -o "src/PeerY.o" "../src/PeerY.cpp"
+Finished building: ../src/PeerY.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:46:24 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+17:12:12 **** Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+17:20:50 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+17:21:58 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+17:24:27 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+14:34:24 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerY.d" -MT"src/PeerY.o" -o "src/PeerY.o" "../src/PeerY.cpp"
+Finished building: ../src/PeerY.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:36:32 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+00:21:21 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:66:24: error: invalid conversion from ‘uint8_t’ {aka ‘unsigned char’} to ‘void*’ [-fpermissive]
+   66 |         memcpy(blkBuf[0],fileName, strLen);
+      |                ~~~~~~~~^
+      |                        |
+      |                        uint8_t {aka unsigned char}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:43:39: note:   initializing argument 1 of ‘void* memcpy(void*, const void*, size_t)’
+   43 | extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+      |                      ~~~~~~~~~~~~~~~~~^~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:22:40 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+11:23:10 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerY.d" -MT"src/PeerY.o" -o "src/PeerY.o" "../src/PeerY.cpp"
+Finished building: ../src/PeerY.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:73:26: error: invalid operands of types ‘const char [2]’ and ‘const char*’ to binary ‘operator+’
+   73 |         string str = "1" + fileName + fileSize;
+      |                      ~~~ ^ ~~~~~~~~
+      |                      |     |
+      |                      |     const char*
+      |                      const char [2]
+../src/SenderY.cpp:75:27: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const void*’
+   75 |         memcpy(&blkBuf[0],str, BLK_SZ_CRC);
+      |                           ^~~
+      |                           |
+      |                           std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:43:70: note:   initializing argument 2 of ‘void* memcpy(void*, const void*, size_t)’
+   43 | extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../src/SenderY.cpp:65:13: warning: unused variable ‘strLen’ [-Wunused-variable]
+   65 |         int strLen = strlen(fileName);
+      |             ^~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:25:24 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:73:32: error: invalid operands of types ‘const char [2]’ and ‘const char*’ to binary ‘operator+’
+   73 |         const char * str = "1" + fileName + fileSize;
+      |                            ~~~ ^ ~~~~~~~~
+      |                            |     |
+      |                            |     const char*
+      |                            const char [2]
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:26:34 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:73:27: error: invalid operands of types ‘const char [2]’ and ‘const char*’ to binary ‘operator+’
+   73 |         string str1 = "1" + fileName + fileSize;
+      |                       ~~~ ^ ~~~~~~~~
+      |                       |     |
+      |                       |     const char*
+      |                       const char [2]
+../src/SenderY.cpp:74:29: error: cannot convert ‘std::string*’ {aka ‘std::__cxx11::basic_string<char>*’} to ‘const char*’ in initialization
+   74 |         const char * str2 = &str1;
+      |                             ^~~~~
+      |                             |
+      |                             std::string* {aka std::__cxx11::basic_string<char>*}
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:27:15 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:73:27: error: invalid operands of types ‘const char [2]’ and ‘const char*’ to binary ‘operator+’
+   73 |         string str1 = "1" + fileName + fileSize;
+      |                       ~~~ ^ ~~~~~~~~
+      |                       |     |
+      |                       |     const char*
+      |                       const char [2]
+../src/SenderY.cpp:76:41: error: invalid cast from type ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to type ‘const char*’
+   76 |         memcpy(&blkBuf[0],(const char *)str1, BLK_SZ_CRC);
+      |                                         ^~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:28:24 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:74:33: error: invalid operands of types ‘const char [2]’ and ‘const char*’ to binary ‘operator+’
+   74 |         const char * str2 = "1" + fileName + fileSize;
+      |                             ~~~ ^ ~~~~~~~~
+      |                             |     |
+      |                             |     const char*
+      |                             const char [2]
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:33:33 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:77:24: error: invalid conversion from ‘unsigned int’ to ‘const char*’ [-fpermissive]
+   77 |         strcat(buffer, fileSize);
+      |                        ^~~~~~~~
+      |                        |
+      |                        unsigned int
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:37:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:78:38: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   78 |         strcat(buffer, std::to_string(fileSize));
+      |                        ~~~~~~~~~~~~~~^~~~~~~~~~
+      |                                      |
+      |                                      std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:39:11 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:73:51: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’ in initialization
+   73 |         const char * fileSizeChar = std::to_string(fileSize);
+      |                                     ~~~~~~~~~~~~~~^~~~~~~~~~
+      |                                                   |
+      |                                                   std::string {aka std::__cxx11::basic_string<char>}
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:39:56 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:74:38: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’ in assignment
+   74 |         fileSizeChar = std::to_string(fileSize);
+      |                        ~~~~~~~~~~~~~~^~~~~~~~~~
+      |                                      |
+      |                                      std::string {aka std::__cxx11::basic_string<char>}
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:44:01 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+11:44:30 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:77:24: error: invalid conversion from ‘char’ to ‘const char*’ [-fpermissive]
+   77 |         strcat(buffer, '1');
+      |                        ^~~
+      |                        |
+      |                        char
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:46:23 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:78:33: error: invalid operands of types ‘const char*’ and ‘const char [3]’ to binary ‘operator+’
+   78 |         strcat(buffer, fileName + "x0");
+      |                        ~~~~~~~~ ^ ~~~~
+      |                        |          |
+      |                        |          const char [3]
+      |                        const char*
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:47:00 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:78:33: error: invalid operands of types ‘const char*’ and ‘const char [3]’ to binary ‘operator+’
+   78 |         strcat(buffer, fileName + "x0");
+      |                        ~~~~~~~~ ^ ~~~~
+      |                        |          |
+      |                        |          const char [3]
+      |                        const char*
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:47:12 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:78:33: error: invalid operands of types ‘const char*’ and ‘const char [2]’ to binary ‘operator+’
+   78 |         strcat(buffer, fileName + "\x0");
+      |                        ~~~~~~~~ ^ ~~~~~
+      |                        |          |
+      |                        |          const char [2]
+      |                        const char*
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:47:30 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+11:47:43 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:78:39: error: too many arguments to function ‘char* strcat(char*, const char*)’
+   78 |         strcat(buffer, fileName, "\x0");
+      |                                       ^
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:14: note: declared here
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |              ^~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:48:07 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+11:57:23 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:100:20: error: invalid conversion from ‘uint16_t’ {aka ‘short unsigned int’} to ‘const char*’ [-fpermissive]
+  100 |     strcat(buffer, myCrc16ns);
+      |                    ^~~~~~~~~
+      |                    |
+      |                    uint16_t {aka short unsigned int}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:58:10 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:100:34: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+  100 |     strcat(buffer, std::to_string(myCrc16ns));
+      |                    ~~~~~~~~~~~~~~^~~~~~~~~~~
+      |                                  |
+      |                                  std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:59:25 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+12:02:21 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:19:55 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:132:28: error: invalid operands of types ‘const char [2]’ and ‘const char [2]’ to binary ‘operator+’
+  132 |     string canStr = "\x18" + "\x18";
+      |                     ~~~~~~ ^ ~~~~~~
+      |                     |        |
+      |                     |        const char [2]
+      |                     const char [2]
+../src/SenderY.cpp:133:38: error: invalid use of non-static member function ‘const _CharT* std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+  133 |     myRead(transferringFileD, canStr.c_str, CHUNK_SZ );
+      |                               ~~~~~~~^~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/bits/basic_string.h:2300:7: note: declared here
+ 2300 |       c_str() const _GLIBCXX_NOEXCEPT
+      |       ^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:21:59 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:132:28: error: invalid operands of types ‘const char [2]’ and ‘const char [2]’ to binary ‘operator+’
+  132 |     string canStr = "\x18" + "\x18";
+      |                     ~~~~~~ ^ ~~~~~~
+      |                     |        |
+      |                     |        const char [2]
+      |                     const char [2]
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:23:33 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:132:28: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  132 |     char * canStr = strcat("\x18","\x18");
+      |                            ^~~~~~
+../src/SenderY.cpp:132:28: warning: passing argument 1 to restrict-qualified parameter aliases with argument 2 [-Wrestrict]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+12:27:05 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+12:50:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+12:52:09 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:133:12: warning: unused variable ‘canStr’ [-Wunused-variable]
+  133 |     char * canStr = strcat(canChar,"\x18");
+      |            ^~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+12:52:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:54:32 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:133:12: warning: unused variable ‘canStr’ [-Wunused-variable]
+  133 |     char * canStr = strcat(canChar,"\x18");
+      |            ^~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:03:02 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:132:29: error: invalid operands of types ‘const char [2]’ and ‘const char [2]’ to binary ‘operator+’
+  132 |     string canChar = "\x18" + "\x18";
+      |                      ~~~~~~ ^ ~~~~~~
+      |                      |        |
+      |                      |        const char [2]
+      |                      const char [2]
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:03:45 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:133:12: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘char*’
+  133 |     strcat(canChar, "\x18");
+      |            ^~~~~~~
+      |            |
+      |            std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:39: note:   initializing argument 1 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                      ~~~~~~~~~~~~~~~~~^~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:05:35 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:139:31: error: request for member ‘c_str’ in ‘buffer’, which is of non-class type ‘char [133]’
+  139 |     memcpy(&blkBuf[0], buffer.c_str(), BLK_SZ_CRC);
+      |                               ^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:06:20 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:08:39 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:17:40 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+13:19:54 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:26:21 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:142:18: warning: unused variable ‘str’ [-Wunused-variable]
+  142 |     const char * str = buffer;
+      |                  ^~~
+../src/SenderY.cpp:146:17: warning: unused variable ‘buf’ [-Wunused-variable]
+  146 |     const void *buf = buffer;
+      |                 ^~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:27:36 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:142:18: warning: unused variable ‘str’ [-Wunused-variable]
+  142 |     const char * str = buffer;
+      |                  ^~~
+../src/SenderY.cpp:146:17: warning: unused variable ‘buf’ [-Wunused-variable]
+  146 |     const void *buf = buffer;
+      |                 ^~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:29:37 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:142:18: warning: unused variable ‘str’ [-Wunused-variable]
+  142 |     const char * str = buffer;
+      |                  ^~~
+../src/SenderY.cpp:146:17: warning: unused variable ‘buf’ [-Wunused-variable]
+  146 |     const void *buf = buffer;
+      |                 ^~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:30:08 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::cans()’:
+../src/SenderY.cpp:142:18: warning: unused variable ‘str’ [-Wunused-variable]
+  142 |     const char * str = buffer;
+      |                  ^~~
+../src/SenderY.cpp:146:17: warning: unused variable ‘buf’ [-Wunused-variable]
+  146 |     const void *buf = buffer;
+      |                 ^~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:31:00 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:31:27 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:36:16 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:36:49 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:37:45 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+13:55:01 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+13:58:48 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:81:13: warning: unused variable ‘nullCount’ [-Wunused-variable]
+   81 |         int nullCount = BLK_SZ_CRC - bufferSize;
+      |             ^~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:09:51 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:76:76: error: expected ‘;’ before ‘)’ token
+   76 |         subFileName = subFileName.substr(subFileName.find_last_of("/\\")+1));
+      |                                                                            ^
+      |                                                                            ;
+../src/SenderY.cpp:79:24: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   79 |         strcat(buffer, subFileName);
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:10:19 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:76:76: error: expected ‘;’ before ‘)’ token
+   76 |         subFileName = subFileName.substr(subFileName.find_last_of("/\\")+1));
+      |                                                                            ^
+      |                                                                            ;
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:10:40 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:76:76: error: expected ‘;’ before ‘)’ token
+   76 |         subFileName = subFileName.substr(subFileName.find_last_of("/\\")+1));
+      |                                                                            ^
+      |                                                                            ;
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:11:23 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:76:76: error: expected ‘;’ before ‘)’ token
+   76 |         subFileName = subFileName.substr(subFileName.find_last_of("/\\")+1));
+      |                                                                            ^
+      |                                                                            ;
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:12:29 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:13:57 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:77:14: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’})
+   77 |         cout >> subFileName;
+      |         ~~~~ ^~ ~~~~~~~~~~~
+      |         |       |
+      |         |       std::string {aka std::__cxx11::basic_string<char>}
+      |         std::ostream {aka std::basic_ostream<char>}
+In file included from /usr/include/c++/9/string:56,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)’
+ 1466 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/basic_string.tcc:1466:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:77:17: note:   ‘std::ostream’ {aka ‘std::basic_ostream<char>’} is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   77 |         cout >> subFileName;
+      |                 ^~~~~~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/bits/istream.tcc:931:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)’
+  931 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:931:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:77:17: note:   ‘std::ostream’ {aka ‘std::basic_ostream<char>’} is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   77 |         cout >> subFileName;
+      |                 ^~~~~~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/istream:756:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)’
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:756:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:77:17: note:   ‘std::ostream’ {aka ‘std::basic_ostream<char>’} is not derived from ‘std::basic_istream<char, _Traits>’
+   77 |         cout >> subFileName;
+      |                 ^~~~~~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/istream:761:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)’
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:761:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:77:17: note:   ‘std::ostream’ {aka ‘std::basic_ostream<char>’} is not derived from ‘std::basic_istream<char, _Traits>’
+   77 |         cout >> subFileName;
+      |                 ^~~~~~~~~~~
+In file included from /usr/include/c++/9/istream:991,
+                 from /usr/include/c++/9/iostream:40,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/bits/istream.tcc:963:5: note: candidate: ‘template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)’
+  963 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/istream.tcc:963:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:77:17: note:   ‘std::ostream’ {aka ‘std::basic_ostream<char>’} is not derived from ‘std::basic_istream<_CharT, _Traits>’
+   77 |         cout >> subFileName;
+      |                 ^~~~~~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/istream:803:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)’
+  803 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:803:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:77:17: note:   ‘std::ostream’ {aka ‘std::basic_ostream<char>’} is not derived from ‘std::basic_istream<char, _Traits>’
+   77 |         cout >> subFileName;
+      |                 ^~~~~~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/istream:808:5: note: candidate: ‘template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)’
+  808 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:808:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:77:17: note:   ‘std::ostream’ {aka ‘std::basic_ostream<char>’} is not derived from ‘std::basic_istream<char, _Traits>’
+   77 |         cout >> subFileName;
+      |                 ^~~~~~~~~~~
+In file included from /usr/include/c++/9/iostream:40,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/istream:980:5: note: candidate: ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&)’
+  980 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+/usr/include/c++/9/istream:980:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/9/istream: In substitution of ‘template<class _Istream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_istream<_Istream>, std::__is_extractable<typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type, _Tp&&, void> >::value, typename std::__is_convertible_to_basic_istream<_Tp>::__istream_type>::type std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_ostream<char>&; _Tp = std::__cxx11::basic_string<char>&]’:
+../src/SenderY.cpp:77:17:   required from here
+/usr/include/c++/9/istream:980:5: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+../src/SenderY.cpp:84:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   84 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:14:22 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:84:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   84 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:15:14 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:84:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   84 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:16:22 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+In file included from ../src/SenderY.h:7,
+                 from ../src/SenderY.cpp:35:
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/PeerY.h:30:13: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive]
+   30 | #define SOH 0x01
+      |             ^~~~
+      |             |
+      |             int
+../src/SenderY.cpp:78:24: note: in expansion of macro ‘SOH’
+   78 |         strcat(buffer, SOH);
+      |                        ^~~
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../src/SenderY.cpp:80:28: warning: null argument where non-null required (argument 2) [-Wnonnull]
+   80 |         strcat(buffer, NULL);
+      |                            ^
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:16:57 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:78:33: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   78 |         strcat(buffer, to_string(SOH));
+      |                        ~~~~~~~~~^~~~~
+      |                                 |
+      |                                 std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../src/SenderY.cpp:80:28: warning: null argument where non-null required (argument 2) [-Wnonnull]
+   80 |         strcat(buffer, NULL);
+      |                            ^
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:17:27 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:80:28: warning: null argument where non-null required (argument 2) [-Wnonnull]
+   80 |         strcat(buffer, NULL);
+      |                            ^
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:17:39 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+14:18:06 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:80:28: warning: null argument where non-null required (argument 2) [-Wnonnull]
+   80 |         strcat(buffer, NULL);
+      |                            ^
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:18:28 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+14:18:30 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+14:18:44 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+14:19:04 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+14:19:53 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:36:44 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerY.d" -MT"src/PeerY.o" -o "src/PeerY.o" "../src/PeerY.cpp"
+Finished building: ../src/PeerY.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:37:41 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:13: warning: unused variable ‘bufferSize’ [-Wunused-variable]
+   83 |         int bufferSize = strlen(buffer);
+      |             ^~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:39:39 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:40:20 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:42:04 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:43:47 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:44:43 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+16:45:02 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:26 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+16:51:49 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+16:59:29 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:00:49 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:77:42: error: invalid operands of types ‘const char [2]’ and ‘const char [26]’ to binary ‘operator+’
+   77 |         char buffer [BLK_SZ_CRC] = "\x0" + ".sudo_as_admin_successful";
+      |                                    ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                    |       |
+      |                                    |       const char [26]
+      |                                    const char [2]
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:01:08 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:09:49 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+In file included from ../src/SenderY.h:7,
+                 from ../src/SenderY.cpp:35:
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/PeerY.h:30:13: error: array must be initialized with a brace-enclosed initializer
+   30 | #define SOH 0x01
+      |             ^~~~
+../src/SenderY.cpp:78:36: note: in expansion of macro ‘SOH’
+   78 |         char buffer [BLK_SZ_CRC] = SOH;
+      |                                    ^~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:10:02 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:11:42 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:78:45: error: array must be initialized with a brace-enclosed initializer
+   78 |         char buffer [BLK_SZ_CRC] = to_string(SOH);
+      |                                    ~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:14:38 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:81:44: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   81 |         memcpy(buffer, subFileName, strlen(subFileName));
+      |                                            ^~~~~~~~~~~
+      |                                            |
+      |                                            std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:385:35: note:   initializing argument 1 of ‘size_t strlen(const char*)’
+  385 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:15:57 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:81:52: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   81 |         memcpy(buffer, subFileName.c_str(), strlen(subFileName));
+      |                                                    ^~~~~~~~~~~
+      |                                                    |
+      |                                                    std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:385:35: note:   initializing argument 1 of ‘size_t strlen(const char*)’
+  385 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:16:26 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:81:24: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const void*’
+   81 |         memcpy(buffer, subFileName, strlen(subFileName.c_str()));
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:43:70: note:   initializing argument 2 of ‘void* memcpy(void*, const void*, size_t)’
+   43 | extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:16:37 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:17:28 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:80:24: warning: passing NULL to non-pointer argument 2 of ‘void* memset(void*, int, size_t)’ [-Wconversion-null]
+   80 |         memset(buffer, NULL, 1);
+      |                        ^~~~
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:61:37: note:   declared here
+   61 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
+      |                                 ~~~~^~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:17:54 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:80:23: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+   80 |         memset(buffer,"\x00", 1);
+      |                       ^~~~~~
+      |                       |
+      |                       const char*
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:61:37: note:   initializing argument 2 of ‘void* memset(void*, int, size_t)’
+   61 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
+      |                                 ~~~~^~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:18:34 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:19:09 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:80:23: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+   80 |         memset(buffer,"\x00", BLK_SZ_CRC);
+      |                       ^~~~~~
+      |                       |
+      |                       const char*
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:61:37: note:   initializing argument 2 of ‘void* memset(void*, int, size_t)’
+   61 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
+      |                                 ~~~~^~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:20:02 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:20:36 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:20:56 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:22:28 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:25:37 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:32: error: invalid use of non-static member function ‘const _CharT* std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]’
+   83 |         strcat(buffer, mainStr.c_str);
+      |                        ~~~~~~~~^~~~~
+In file included from /usr/include/c++/9/string:55,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from ../src/SenderY.cpp:37:
+/usr/include/c++/9/bits/basic_string.h:2300:7: note: declared here
+ 2300 |       c_str() const _GLIBCXX_NOEXCEPT
+      |       ^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:25:53 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:24: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   83 |         strcat(buffer, mainStr);
+      |                        ^~~~~~~
+      |                        |
+      |                        std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:26:46 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:83:24: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   83 |         strcat(buffer, mainStr);
+      |                        ^~~~~~~
+      |                        |
+      |                        std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:130:70: note:   initializing argument 2 of ‘char* strcat(char*, const char*)’
+  130 | extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:27:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:27:58 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:28:23 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:26 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:31:16 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:31:36 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:34:22 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:84:34: error: no match for ‘operator-’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘int’)
+   84 |         memset(buffer[subFileName-1], 0,1);
+      |                       ~~~~~~~~~~~^~
+      |                       |           |
+      |                       |           int
+      |                       std::string {aka std::__cxx11::basic_string<char>}
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/vector:60,
+                 from ../src/SenderY.h:5,
+                 from ../src/SenderY.cpp:35:
+/usr/include/c++/9/bits/stl_iterator.h:415:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  415 |     operator-(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:415:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:84:35: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+   84 |         memset(buffer[subFileName-1], 0,1);
+      |                                   ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/vector:60,
+                 from ../src/SenderY.h:5,
+                 from ../src/SenderY.cpp:35:
+/usr/include/c++/9/bits/stl_iterator.h:1212:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1212 |     operator-(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:1212:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:84:35: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   84 |         memset(buffer[subFileName-1], 0,1);
+      |                                   ^
+In file included from /usr/include/c++/9/vector:68,
+                 from ../src/SenderY.h:5,
+                 from ../src/SenderY.cpp:35:
+/usr/include/c++/9/bits/stl_bvector.h:214:3: note: candidate: ‘std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)’
+  214 |   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+      |   ^~~~~~~~
+/usr/include/c++/9/bits/stl_bvector.h:214:39: note:   no known conversion for argument 1 from ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const std::_Bit_iterator_base&’
+  214 |   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/vector:60,
+                 from ../src/SenderY.h:5,
+                 from ../src/SenderY.cpp:35:
+/usr/include/c++/9/bits/stl_iterator.h:977:5: note: candidate: ‘template<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)’
+  977 |     operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:977:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:84:35: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+   84 |         memset(buffer[subFileName-1], 0,1);
+      |                                   ^
+In file included from /usr/include/c++/9/bits/stl_algobase.h:67,
+                 from /usr/include/c++/9/vector:60,
+                 from ../src/SenderY.h:5,
+                 from ../src/SenderY.cpp:35:
+/usr/include/c++/9/bits/stl_iterator.h:989:5: note: candidate: ‘template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)’
+  989 |     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/9/bits/stl_iterator.h:989:5: note:   template argument deduction/substitution failed:
+../src/SenderY.cpp:84:35: note:   ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+   84 |         memset(buffer[subFileName-1], 0,1);
+      |                                   ^
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:34:51 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:84:30: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+   84 |         memset(buffer[strlen(subFileName)-1], 0,1);
+      |                              ^~~~~~~~~~~
+      |                              |
+      |                              std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:385:35: note:   initializing argument 1 of ‘size_t strlen(const char*)’
+  385 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:35:17 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:84:52: error: invalid conversion from ‘char’ to ‘void*’ [-fpermissive]
+   84 |         memset(buffer[strlen(subFileName.c_str())-1], 0,1);
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+      |                                                    |
+      |                                                    char
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:61:28: note:   initializing argument 1 of ‘void* memset(void*, int, size_t)’
+   61 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
+      |                      ~~~~~~^~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:37:39 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:112:36: warning: null argument where non-null required (argument 2) [-Wnonnull]
+  112 |     memcpy(&blkBuf[0],0, BLK_SZ_CRC);
+      |                                    ^
+../src/SenderY.cpp:101:22: warning: unused variable ‘str2’ [-Wunused-variable]
+  101 |         const char * str2 = buffer;
+      |                      ^~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:37:57 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:112:24: error: invalid conversion from ‘char’ to ‘const void*’ [-fpermissive]
+  112 |     memcpy(&blkBuf[0], '\0', BLK_SZ_CRC);
+      |                        ^~~~
+      |                        |
+      |                        char
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:43:70: note:   initializing argument 2 of ‘void* memcpy(void*, const void*, size_t)’
+   43 | extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../src/SenderY.cpp:101:22: warning: unused variable ‘str2’ [-Wunused-variable]
+  101 |         const char * str2 = buffer;
+      |                      ^~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:38:20 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:101:22: warning: unused variable ‘str2’ [-Wunused-variable]
+  101 |         const char * str2 = buffer;
+      |                      ^~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:38:49 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:114:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  114 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:114:5: warning: statement has no effect [-Wunused-value]
+../src/SenderY.cpp:101:22: warning: unused variable ‘str2’ [-Wunused-variable]
+  101 |         const char * str2 = buffer;
+      |                      ^~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:42:06 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:42:32 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:43:06 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:43:26 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:43:51 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:44:08 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:44:25 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:45:38 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:46:01 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:47:34 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:47:49 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:48:52 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:85:59: warning: null argument where non-null required (argument 2) [-Wnonnull]
+   85 |         memcpy(&buffer[strlen(subFileName.c_str())], 0x0,1);
+      |                                                           ^
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:49:10 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:49:26 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:115:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  115 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:115:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:52:14 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:112:72: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const char*’
+  112 |     memcpy(&buffer[strlen(subFileName.c_str())], crcNum.c_str(),strlen(crcNum));
+      |                                                                        ^~~~~~
+      |                                                                        |
+      |                                                                        std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:385:35: note:   initializing argument 1 of ‘size_t strlen(const char*)’
+  385 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:52:56 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:53:31 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:53:53 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:54:24 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:56:43 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:57:05 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:57:23 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:58:07 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:00:45 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:113:52: error: invalid conversion from ‘uint16_t’ {aka ‘short unsigned int’} to ‘const void*’ [-fpermissive]
+  113 |     memcpy(&buffer[strlen(subFileName.c_str())+2], myCrc16ns, sizeof(crcNum.c_str()));
+      |                                                    ^~~~~~~~~
+      |                                                    |
+      |                                                    uint16_t {aka short unsigned int}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:43:70: note:   initializing argument 2 of ‘void* memcpy(void*, const void*, size_t)’
+   43 | extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:01:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:113:68: warning: argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘const char*’ as the source; expected ‘const char’ or an explicit length [-Wsizeof-pointer-memaccess]
+  113 |     memcpy(&buffer[strlen(subFileName.c_str())+2], crcNum.c_str(), sizeof(crcNum.c_str()));
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:01:36 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:113:68: warning: argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘const char*’ as the source; expected ‘const char’ or an explicit length [-Wsizeof-pointer-memaccess]
+  113 |     memcpy(&buffer[strlen(subFileName.c_str())+2], crcNum.c_str(), sizeof(crcNum.c_str()));
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~
+../src/SenderY.cpp:116:5: warning: statement is a reference, not call, to function ‘exit’ [-Waddress]
+  116 |     exit;
+      |     ^~~~
+../src/SenderY.cpp:116:5: warning: statement has no effect [-Wunused-value]
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:02:01 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:113:68: warning: argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘const char*’ as the source; expected ‘const char’ or an explicit length [-Wsizeof-pointer-memaccess]
+  113 |     memcpy(&buffer[strlen(subFileName.c_str())+2], crcNum.c_str(), sizeof(crcNum.c_str()));
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:04:22 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:113:94: error: expected ‘)’ before ‘;’ token
+  113 |     memcpy(&buffer[strlen(subFileName.c_str())+2], fileSizeChar, sizeof(fileSizeChar.c_str());
+      |           ~                                                                                  ^
+      |                                                                                              )
+../src/SenderY.cpp:114:47: warning: argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘const char*’ as the source; expected ‘const char’ or an explicit length [-Wsizeof-pointer-memaccess]
+  114 |     memcpy(&buffer[CHUNK_SZ], crcNum.c_str(), sizeof(crcNum.c_str()));
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:05:00 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:113:52: error: cannot convert ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} to ‘const void*’
+  113 |     memcpy(&buffer[strlen(subFileName.c_str())+2], fileSizeChar, sizeof(fileSizeChar.c_str()));
+      |                                                    ^~~~~~~~~~~~
+      |                                                    |
+      |                                                    std::string {aka std::__cxx11::basic_string<char>}
+In file included from ../src/SenderY.cpp:39:
+/usr/include/string.h:43:70: note:   initializing argument 2 of ‘void* memcpy(void*, const void*, size_t)’
+   43 | extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../src/SenderY.cpp:114:47: warning: argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘const char*’ as the source; expected ‘const char’ or an explicit length [-Wsizeof-pointer-memaccess]
+  114 |     memcpy(&buffer[CHUNK_SZ], crcNum.c_str(), sizeof(crcNum.c_str()));
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/SenderY.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:05:19 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:113:74: warning: argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘const char*’ as the source; expected ‘const char’ or an explicit length [-Wsizeof-pointer-memaccess]
+  113 |     memcpy(&buffer[strlen(subFileName.c_str())+2], fileSizeChar.c_str(), sizeof(fileSizeChar.c_str()));
+      |                                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/SenderY.cpp:114:47: warning: argument to ‘sizeof’ in ‘void* memcpy(void*, const void*, size_t)’ call is the same pointer type ‘const char*’ as the source; expected ‘const char’ or an explicit length [-Wsizeof-pointer-memaccess]
+  114 |     memcpy(&buffer[CHUNK_SZ], crcNum.c_str(), sizeof(crcNum.c_str()));
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:06:36 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:07:19 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:07:35 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:09:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:09:36 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:09:53 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:25:19 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:25:59 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:26:43 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:28:53 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:29:53 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+18:31:45 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:82:13: warning: unused variable ‘count’ [-Wunused-variable]
+   82 |         int count = blkNum++;
+      |             ^~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:32:03 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:33:28 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:82:13: warning: unused variable ‘count’ [-Wunused-variable]
+   82 |         int count = blkNum++;
+      |             ^~~~~
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+18:33:33 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.

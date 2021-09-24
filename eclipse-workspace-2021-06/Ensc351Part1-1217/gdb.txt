@@ -1,0 +1,52 @@
+~"+handle SIGPIPE nostop\n"
+~"+skip -rfu ^std::\n"
+~"Function(s) ^std:: will be skipped when stepping.\n"
+14^done
+(gdb) 
+15^done,groups=[{id="i1",type="process"}]
+(gdb) 
+16^done
+(gdb) 
+17^done
+(gdb) 
+18^done
+(gdb) 
+19^done
+(gdb) 
+20^done,value="auto"
+(gdb) 
+21^done
+(gdb) 
+~"$1 = 0xff\n"
+22^done
+(gdb) 
+23^done,value="8"
+(gdb) 
+24^done
+(gdb) 
+~"The target endianness is set automatically (currently little endian)\n"
+25^done
+(gdb) 
+26^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000003f54",func="SenderY::genStatBlk(unsigned char*, char const*)",file="../src/SenderY.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part1-1217/src/SenderY.cpp",line="86",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part1-1217/src/SenderY.cpp:84"}
+(gdb) 
+27^done,bkpt={number="2",type="breakpoint",disp="del",enabled="y",addr="0x00000000000028b7",func="main()",file="../src/Ensc351Part1.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part1-1217/src/Ensc351Part1.cpp",line="28",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+28^done
+(gdb) 
+=thread-group-started,id="i1",pid="6898"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555557f54",func="SenderY::genStatBlk(unsigned char*, char const*)",file="../src/SenderY.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part1-1217/src/SenderY.cpp",line="86",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part1-1217/src/SenderY.cpp:84"}
+=breakpoint-modified,bkpt={number="2",type="breakpoint",disp="del",enabled="y",addr="0x00005555555568b7",func="main()",file="../src/Ensc351Part1.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part1-1217/src/Ensc351Part1.cpp",line="28",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+29^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libstdc++.so.6",target-name="/lib/x86_64-linux-gnu/libstdc++.so.6",host-name="/lib/x86_64-linux-gnu/libstdc++.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e6d160",to="0x00007ffff7f55452"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcc_s.so.1",target-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",host-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7db75e0",to="0x00007ffff7dc8045"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7be7630",to="0x00007ffff7d5c20d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a823c0",to="0x00007ffff7b28f18"}]
+30^done,groups=[{id="i1",type="process",pid="6898",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part1-1217/Debug/Ensc351Part1-1217",cores=["2"]}]
+(gdb) 
+31^exit
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"
